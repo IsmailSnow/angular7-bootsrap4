@@ -10,7 +10,12 @@ const routes: Routes = [ {
 {
   path: 'home',
   component: HomeComponent
-}];
+},
+{
+  path: 'auth',
+  loadChildren: './auth/auth.module#AuthModule'
+}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
